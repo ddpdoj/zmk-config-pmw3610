@@ -50,7 +50,7 @@
     &trans  &trans  &trans     &trans     &trans         &trans  &trans  &trans  &trans  &trans
     &trans  &trans  &trans     &trans     &trans         &trans  &trans  &trans  &trans  &trans
     &trans  &trans  &trans     &trans     &trans         &trans  &trans  &trans  &trans  &trans
-                    &mkp LCLK  &mkp MCLK  &mkp RCLK      &mo 1   &mo 2   &to 0
+                    &trans  &trans  &trans      &mo 1   &mo 2   &to 0
             >;
         };
     };
