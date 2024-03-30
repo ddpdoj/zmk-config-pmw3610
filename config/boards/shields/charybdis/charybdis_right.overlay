@@ -5,6 +5,7 @@
  */
  
 #include "charybdis.dtsi"
+#include <dt-bindings/led/led.h>
 
 &default_transform {
 	col-offset = <5>;
@@ -37,6 +38,19 @@
             low-power-enable;
         };
     };
+
+    spi3_default: spi3_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 24)>;
+        };
+    };
+
+    spi3_sleep: spi3_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 24)>;
+            low-power-enable;
+        };
+    };
 };
 
 &spi0 {
@@ -58,8 +72,7 @@
     };
 };
 
-#include <dt-bindings/led/led.h>
-
+/*
 &pinctrl {
     spi3_default: spi3_default {
         group1 {
@@ -74,6 +87,7 @@
         };
     };
 };
+*/
 
 &spi3 {
   compatible = "nordic,nrf-spim";
