@@ -10,10 +10,6 @@
     quick-tap-ms = <150>;
 };
 
-&led_strip {
-    chain-length = <18>;
-};
-
 / {
     keymap {
     compatible = "zmk,keymap";
